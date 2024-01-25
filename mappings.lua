@@ -2,9 +2,13 @@
 local M = {}
 
 M.general = {
+  i = {
+    ["<C-u>"] = { "<cmd>lua require('custom.uuid').insert_uuid()<CR>", "Insert UUID" },
+  },
   n = {
     ["[t"] = { ":tabprevious<CR>", "Previous tab" },
     ["]t"] = { ":tabnext<CR>", desc = "Next tab" },
+    ["iuu"] = { "<cmd>:r <CR>" },
     ["<leader>w"] = { "<cmd>w<CR>", "Save" },
     ["<leader>ll"] = { "<cmd>TroubleToggle<CR>", "Open Trouble" },
     ["<leader>lw"] = {

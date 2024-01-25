@@ -7,14 +7,12 @@ local highlights = require "custom.highlights"
 -- bearded-arc
 -- palenight
 M.ui = {
-  theme = "chadracula",
+  theme = "gruvbox",
   theme_toggle = { "chadracula", "one_light" },
 
   hl_override = highlights.override,
   hl_add = highlights.add,
 }
-
-
 
 M.plugins = "custom.plugins"
 

@@ -13,11 +13,6 @@ local sources = {
   b.formatting.shfmt,
   b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
 
-  -- Markdown
-  b.formatting.markdownlint,
-  b.diagnostics.alex,
-  b.diagnostics.write_good,
-
   -- Git
   b.diagnostics.commitlint,
 }
