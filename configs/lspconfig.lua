@@ -25,6 +25,17 @@ lspconfig.eslint.setup {
   capabilities = capabilities,
 }
 
+lspconfig.rust_analyzer.setup {
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      buffer = bufnr,
+      command = "RustFmt",
+    })
+  end,
+  capabilities = capabilities,
+}
+
 lspconfig.prismals.setup {
   on_attach = on_attach,
   capabilities = capabilities,

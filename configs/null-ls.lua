@@ -15,6 +15,9 @@ local sources = {
 
   -- Git
   b.diagnostics.commitlint,
+
+
+  b.formatting.taplo
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})

@@ -14,6 +14,7 @@ M.treesitter = {
     "markdown_inline",
     "prisma",
     "go",
+    "rust",
   },
   indent = {
     enable = true,
@@ -36,6 +37,7 @@ M.mason = {
     "gopls",
     "gradle_ls",
     "json-lsp",
+    "rust-analyzer",
   },
 }
 
